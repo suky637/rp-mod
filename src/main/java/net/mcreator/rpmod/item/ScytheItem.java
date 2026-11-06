@@ -42,6 +42,6 @@ public class ScytheItem extends SwordItem {
 	};
 
 	public ScytheItem() {
-		super(TOOL_TIER, new Item.Properties().attributes(SwordItem.createAttributes(TOOL_TIER, 6f, 4f)));
+		super(TOOL_TIER, new Item.Properties().attributes(SwordItem.createAttributes(TOOL_TIER, 6f, -3.2f)));
 	}
 }
