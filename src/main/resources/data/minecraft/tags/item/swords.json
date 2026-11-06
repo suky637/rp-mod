@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "rpmod:scythe",
     "rpmod:dagger"
   ]
 }

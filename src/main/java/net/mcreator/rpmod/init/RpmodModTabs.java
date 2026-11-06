@@ -22,6 +22,7 @@ public class RpmodModTabs {
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(RpmodModItems.DAGGER.get());
+			tabData.accept(RpmodModItems.SCYTHE.get());
 		}
 	}
 }
