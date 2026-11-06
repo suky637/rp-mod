@@ -25,6 +25,18 @@
           "src/main/java/net/mcreator/rpmod/item/ScytheItem.java"
         ]
       }
+    },
+    {
+      "name": "Daggerrecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "daggerrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/rpmod/recipe/daggerrecipe.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -45,10 +57,10 @@
   "metadata": {
     "files": [
       "src/main/java/net/mcreator/rpmod/init/RpmodModItems.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/java/net/mcreator/rpmod/init/RpmodModTabs.java",
-      "src/main/java/net/mcreator/rpmod/RpmodMod.java",
-      "src/main/resources/pack.mcmeta"
+      "src/main/resources/pack.mcmeta",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/rpmod/RpmodMod.java"
     ]
   },
   "foldersRoot": {
