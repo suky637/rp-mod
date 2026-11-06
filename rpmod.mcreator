@@ -25,6 +25,19 @@
           "src/main/java/net/mcreator/rpmod/item/ScytheItem.java"
         ]
       }
+    },
+    {
+      "name": "Scythes",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scythes",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/rpmod/recipe/scythes.json",
+          "src/main/resources/data/rpmod/advancement/recipes/scythes.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
