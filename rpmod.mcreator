@@ -302,7 +302,7 @@
     {
       "name": "player_exp",
       "type": "number",
-      "scope": "player_lifetime",
+      "scope": "player_persistent",
       "value": "0.0"
     },
     {
@@ -314,7 +314,7 @@
     {
       "name": "points",
       "type": "number",
-      "scope": "map",
+      "scope": "player_persistent",
       "value": "0"
     }
   ],
