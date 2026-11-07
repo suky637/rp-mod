@@ -240,9 +240,55 @@
         ]
       },
       "path": "~/Ores/Saphire"
+    },
+    {
+      "name": "Level",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/rpmod/client/screens/LevelOverlay.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "GetLevel",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_level",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/rpmod/procedures/GetLevelProcedure.java"
+        ]
+      },
+      "path": "~/GUI"
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "player_exp",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "player_level",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    }
+  ],
   "sound_elements": [],
   "tag_elements": {
     "ITEMS:minecraft:swords": [
@@ -283,6 +329,7 @@
       "src/main/java/net/mcreator/rpmod/init/RpmodModItems.java",
       "src/main/java/net/mcreator/rpmod/init/RpmodModTabs.java",
       "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/rpmod/network/RpmodModVariables.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/java/net/mcreator/rpmod/RpmodMod.java"
     ]
@@ -311,6 +358,10 @@
             "children": []
           }
         ]
+      },
+      {
+        "name": "GUI",
+        "children": []
       }
     ]
   },

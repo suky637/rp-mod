@@ -18,6 +18,7 @@ import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.rpmod.network.RpmodModVariables;
 import net.mcreator.rpmod.init.RpmodModTabs;
 import net.mcreator.rpmod.init.RpmodModItems;
 import net.mcreator.rpmod.init.RpmodModBlocks;
@@ -45,6 +46,7 @@ public class RpmodMod {
 		RpmodModBlocks.REGISTRY.register(modEventBus);
 		RpmodModItems.REGISTRY.register(modEventBus);
 		RpmodModTabs.REGISTRY.register(modEventBus);
+		RpmodModVariables.ATTACHMENT_TYPES.register(modEventBus);
 		// Start of user code block mod init
 		// End of user code block mod init
 	}

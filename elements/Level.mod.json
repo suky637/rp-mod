@@ -1,0 +1,37 @@
+{
+  "_fv": 89,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_level_show",
+          "text": {
+            "fixedValue": "",
+            "name": "GetLevel"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "anchorPoint": "CENTER",
+          "x": 2,
+          "y": 2,
+          "locked": false
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}
