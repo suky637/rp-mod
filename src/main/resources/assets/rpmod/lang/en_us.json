@@ -6,5 +6,7 @@
   "block.rpmod.ruby_block": "Block of Ruby",
   "item.rpmod.saphire": "Saphire",
   "block.rpmod.saphire_ore": "Saphire Ore",
-  "block.rpmod.saphire_block": "Block of Saphire"
+  "block.rpmod.saphire_block": "Block of Saphire",
+  "gui.rpmod.skill_tree.button_upg_arrow": "Upg Arrow",
+  "key.rpmod.skill_tree_k": "Access the skill tree"
 }

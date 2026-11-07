@@ -296,6 +296,171 @@
         ]
       },
       "path": "~/Scripts"
+    },
+    {
+      "name": "GetPoints",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_points",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/rpmod/procedures/GetPointsProcedure.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "GetArrowCost",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_arrow_cost",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/rpmod/procedures/GetArrowCostProcedure.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "UpgArrows",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "upg_arrows",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/rpmod/procedures/UpgArrowsProcedure.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "SkillTree",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_tree",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/rpmod/world/inventory/SkillTreeMenu.java",
+          "src/main/java/net/mcreator/rpmod/client/gui/SkillTreeScreen.java",
+          "src/main/java/net/mcreator/rpmod/network/SkillTreeButtonMessage.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "OnProjectile",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "on_projectile",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/rpmod/procedures/OnProjectileProcedure.java"
+        ]
+      },
+      "path": "~/Scripts"
+    },
+    {
+      "name": "SkillTreeKOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_tree_k_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/rpmod/procedures/SkillTreeKOnKeyPressedProcedure.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "SkillTreeK",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skill_tree_k",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/rpmod/network/SkillTreeKMessage.java"
+        ]
+      },
+      "path": "~/GUI"
     }
   ],
   "variable_elements": [
@@ -313,6 +478,12 @@
     },
     {
       "name": "points",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "player_arrow_skill",
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
@@ -349,11 +520,17 @@
       "block.rpmod.ruby_block": "Block of Ruby",
       "item.rpmod.saphire": "Saphire",
       "block.rpmod.saphire_ore": "Saphire Ore",
-      "block.rpmod.saphire_block": "Block of Saphire"
+      "block.rpmod.saphire_block": "Block of Saphire",
+      "gui.rpmod.skill_tree.button_upg_arrow": "Upg Arrow",
+      "key.rpmod.skill_tree_k": "Access the skill tree"
     }
   },
   "metadata": {
     "files": [
+      "src/main/java/net/mcreator/rpmod/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/rpmod/init/RpmodModScreens.java",
+      "src/main/java/net/mcreator/rpmod/init/RpmodModMenus.java",
+      "src/main/java/net/mcreator/rpmod/init/RpmodModKeyMappings.java",
       "src/main/java/net/mcreator/rpmod/init/RpmodModBlocks.java",
       "src/main/java/net/mcreator/rpmod/init/RpmodModItems.java",
       "src/main/java/net/mcreator/rpmod/init/RpmodModTabs.java",

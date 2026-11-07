@@ -69,6 +69,7 @@ public class RpmodModVariables {
 		clone.player_exp = original.player_exp;
 		clone.player_level = original.player_level;
 		clone.points = original.points;
+		clone.player_arrow_skill = original.player_arrow_skill;
 		if (!event.isWasDeath()) {
 		}
 		event.getEntity().setData(PLAYER_VARIABLES, clone);
@@ -79,6 +80,7 @@ public class RpmodModVariables {
 		public double player_exp = 0.0;
 		public double player_level = 1.0;
 		public double points = 0;
+		public double player_arrow_skill = 0;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -86,6 +88,7 @@ public class RpmodModVariables {
 			nbt.putDouble("player_exp", player_exp);
 			nbt.putDouble("player_level", player_level);
 			nbt.putDouble("points", points);
+			nbt.putDouble("player_arrow_skill", player_arrow_skill);
 			return nbt;
 		}
 
@@ -94,6 +97,7 @@ public class RpmodModVariables {
 			player_exp = nbt.getDouble("player_exp");
 			player_level = nbt.getDouble("player_level");
 			points = nbt.getDouble("points");
+			player_arrow_skill = nbt.getDouble("player_arrow_skill");
 		}
 
 		public void markSyncDirty() {

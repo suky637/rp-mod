@@ -20,6 +20,7 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.rpmod.network.RpmodModVariables;
 import net.mcreator.rpmod.init.RpmodModTabs;
+import net.mcreator.rpmod.init.RpmodModMenus;
 import net.mcreator.rpmod.init.RpmodModItems;
 import net.mcreator.rpmod.init.RpmodModBlocks;
 
@@ -47,6 +48,7 @@ public class RpmodMod {
 		RpmodModItems.REGISTRY.register(modEventBus);
 		RpmodModTabs.REGISTRY.register(modEventBus);
 		RpmodModVariables.ATTACHMENT_TYPES.register(modEventBus);
+		RpmodModMenus.REGISTRY.register(modEventBus);
 		// Start of user code block mod init
 		// End of user code block mod init
 	}
