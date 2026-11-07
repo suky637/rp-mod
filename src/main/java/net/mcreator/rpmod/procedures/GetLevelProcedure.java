@@ -8,6 +8,6 @@ public class GetLevelProcedure {
 	public static String execute(Entity entity) {
 		if (entity == null)
 			return "";
-		return "Level " + entity.getData(RpmodModVariables.PLAYER_VARIABLES).player_level;
+		return "Level " + entity.getData(RpmodModVariables.PLAYER_VARIABLES).player_level + " | Exp " + entity.getData(RpmodModVariables.PLAYER_VARIABLES).player_exp + " / " + entity.getData(RpmodModVariables.PLAYER_VARIABLES).player_level * 100;
 	}
 }

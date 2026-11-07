@@ -32,7 +32,7 @@ public class LevelOverlay {
 		if (true) {
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 
-					GetLevelProcedure.execute(entity), w / 2 + -211, h / 2 + -118, -1, false);
+					GetLevelProcedure.execute(entity), 2, 2, -1, false);
 		}
 	}
 }

@@ -75,7 +75,7 @@ public class RpmodModVariables {
 
 	public static class PlayerVariables implements INBTSerializable<CompoundTag> {
 		boolean _syncDirty = false;
-		public double player_exp = 0;
+		public double player_exp = 0.0;
 		public double player_level = 1.0;
 
 		@Override

@@ -280,7 +280,7 @@
       "name": "player_exp",
       "type": "number",
       "scope": "player_lifetime",
-      "value": "0"
+      "value": "0.0"
     },
     {
       "name": "player_level",
