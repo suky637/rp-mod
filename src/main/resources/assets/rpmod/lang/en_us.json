@@ -1,4 +1,7 @@
 {
   "item.rpmod.dagger": "Dagger",
-  "item.rpmod.scythe": "Scythe"
+  "item.rpmod.scythe": "Scythe",
+  "item.rpmod.ruby": "Ruby",
+  "block.rpmod.ruby_ore": "Ruby Ore",
+  "block.rpmod.ruby_block": "Block of Ruby"
 }

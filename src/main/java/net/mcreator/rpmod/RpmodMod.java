@@ -20,6 +20,7 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.rpmod.init.RpmodModTabs;
 import net.mcreator.rpmod.init.RpmodModItems;
+import net.mcreator.rpmod.init.RpmodModBlocks;
 
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.Queue;
@@ -41,6 +42,7 @@ public class RpmodMod {
 		// End of user code block mod constructor
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
+		RpmodModBlocks.REGISTRY.register(modEventBus);
 		RpmodModItems.REGISTRY.register(modEventBus);
 		RpmodModTabs.REGISTRY.register(modEventBus);
 		// Start of user code block mod init

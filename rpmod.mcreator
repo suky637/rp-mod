@@ -54,6 +54,93 @@
         ]
       },
       "path": "~/Weapons/Recipes"
+    },
+    {
+      "name": "Ruby",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/rpmod/item/RubyItem.java",
+          "src/main/resources/assets/rpmod/models/item/ruby.json"
+        ]
+      }
+    },
+    {
+      "name": "RubyOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/rpmod/worldgen/placed_feature/ruby_ore.json",
+          "src/main/resources/data/rpmod/loot_table/blocks/ruby_ore.json",
+          "src/main/resources/data/rpmod/worldgen/configured_feature/ruby_ore.json",
+          "src/main/resources/assets/rpmod/blockstates/ruby_ore.json",
+          "src/main/resources/assets/rpmod/models/block/ruby_ore.json",
+          "src/main/resources/assets/rpmod/models/item/ruby_ore.json",
+          "src/main/java/net/mcreator/rpmod/block/RubyOreBlock.java",
+          "src/main/resources/data/rpmod/neoforge/biome_modifier/ruby_ore_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "RubyBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/rpmod/blockstates/ruby_block.json",
+          "src/main/resources/data/rpmod/loot_table/blocks/ruby_block.json",
+          "src/main/java/net/mcreator/rpmod/block/RubyBlockBlock.java",
+          "src/main/resources/assets/rpmod/models/item/ruby_block.json",
+          "src/main/resources/assets/rpmod/models/block/ruby_block.json"
+        ]
+      }
+    },
+    {
+      "name": "RubyOreBlockRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_ore_block_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/rpmod/advancement/recipes/ruby_ore_block_recipe.json",
+          "src/main/resources/data/rpmod/recipe/ruby_ore_block_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "RubyBlockOreRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_block_ore_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/rpmod/advancement/recipes/ruby_block_ore_recipe.json",
+          "src/main/resources/data/rpmod/recipe/ruby_block_ore_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "RubyOreSmelting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_ore_smelting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/rpmod/recipe/ruby_ore_smelting.json",
+          "src/main/resources/data/rpmod/advancement/recipes/ruby_ore_smelting.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -62,22 +149,36 @@
     "ITEMS:minecraft:swords": [
       "~Dagger@CUSTOM:Dagger",
       "~Scythe@CUSTOM:Scythe"
+    ],
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~RubyOre@CUSTOM:RubyOre",
+      "~RubyBlock@CUSTOM:RubyBlock"
+    ],
+    "BLOCKS:minecraft:needs_diamond_tool": [
+      "~RubyBlock@CUSTOM:RubyBlock"
+    ],
+    "BLOCKS:minecraft:needs_iron_tool": [
+      "~RubyOre@CUSTOM:RubyOre"
     ]
   },
   "tab_element_order": {},
   "language_map": {
     "en_us": {
       "item.rpmod.dagger": "Dagger",
-      "item.rpmod.scythe": "Scythe"
+      "item.rpmod.scythe": "Scythe",
+      "item.rpmod.ruby": "Ruby",
+      "block.rpmod.ruby_ore": "Ruby Ore",
+      "block.rpmod.ruby_block": "Block of Ruby"
     }
   },
   "metadata": {
     "files": [
+      "src/main/java/net/mcreator/rpmod/init/RpmodModBlocks.java",
       "src/main/java/net/mcreator/rpmod/init/RpmodModItems.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/java/net/mcreator/rpmod/init/RpmodModTabs.java",
-      "src/main/java/net/mcreator/rpmod/RpmodMod.java",
-      "src/main/resources/pack.mcmeta"
+      "src/main/resources/pack.mcmeta",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/rpmod/RpmodMod.java"
     ]
   },
   "foldersRoot": {
