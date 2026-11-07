@@ -273,6 +273,29 @@
         ]
       },
       "path": "~/GUI"
+    },
+    {
+      "name": "OnKillMob",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "on_kill_mob",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/rpmod/procedures/OnKillMobProcedure.java"
+        ]
+      },
+      "path": "~/Scripts"
     }
   ],
   "variable_elements": [
@@ -287,6 +310,12 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "1.0"
+    },
+    {
+      "name": "points",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
     }
   ],
   "sound_elements": [],
@@ -361,6 +390,10 @@
       },
       {
         "name": "GUI",
+        "children": []
+      },
+      {
+        "name": "Scripts",
         "children": []
       }
     ]
