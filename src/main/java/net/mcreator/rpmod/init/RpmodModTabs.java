@@ -24,17 +24,13 @@ public class RpmodModTabs {
 			tabData.accept(RpmodModItems.DAGGER.get());
 			tabData.accept(RpmodModItems.SCYTHE.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-<<<<<<< HEAD
 			tabData.accept(RpmodModItems.RUBY.get());
+			tabData.accept(RpmodModItems.SAPHIRE.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
 			tabData.accept(RpmodModBlocks.RUBY_ORE.get().asItem());
 			tabData.accept(RpmodModBlocks.RUBY_BLOCK.get().asItem());
-=======
-			tabData.accept(RpmodModItems.SAPHIRE.get());
-		} else if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
 			tabData.accept(RpmodModBlocks.SAPHIRE_ORE.get().asItem());
 			tabData.accept(RpmodModBlocks.SAPHIRE_BLOCK.get().asItem());
->>>>>>> branch 'master' of https://github.com/suky637/rp-mod
 		}
 	}
 }

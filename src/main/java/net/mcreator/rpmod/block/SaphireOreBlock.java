@@ -6,6 +6,6 @@ import net.minecraft.world.level.block.Block;
 
 public class SaphireOreBlock extends Block {
 	public SaphireOreBlock() {
-		super(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM));
+		super(BlockBehaviour.Properties.of().strength(3.9f, 3.7006323122f).requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM));
 	}
 }

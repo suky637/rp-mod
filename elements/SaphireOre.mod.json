@@ -42,8 +42,8 @@
     "specialInformation": {
       "fixedValue": []
     },
-    "hardness": 3.0,
-    "resistance": 3.0,
+    "hardness": 3.9000000000000004,
+    "resistance": 3.7006323122135223,
     "hasGravity": false,
     "isWaterloggable": false,
     "hasBlockItem": true,
@@ -98,7 +98,7 @@
       "fixedValue": 0.0
     },
     "unbreakable": false,
-    "vanillaToolTier": "IRON",
+    "vanillaToolTier": "DIAMOND",
     "isBonemealable": false,
     "sensitiveToVibration": false,
     "vibrationalEvents": [],
@@ -129,9 +129,9 @@
       "TAG:stone_ore_replaceables"
     ],
     "generationShape": "UNIFORM",
-    "frequencyPerChunks": 11,
-    "frequencyOnChunk": 7,
-    "minGenerateHeight": -64,
-    "maxGenerateHeight": -20
+    "frequencyPerChunks": 8,
+    "frequencyOnChunk": 5,
+    "minGenerateHeight": 1,
+    "maxGenerateHeight": 49
   }
 }

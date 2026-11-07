@@ -141,6 +141,93 @@
           "src/main/resources/data/rpmod/advancement/recipes/ruby_ore_smelting.json"
         ]
       }
+    },
+    {
+      "name": "Saphire",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "saphire",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/rpmod/models/item/saphire.json",
+          "src/main/java/net/mcreator/rpmod/item/SaphireItem.java"
+        ]
+      }
+    },
+    {
+      "name": "SaphireOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "saphire_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/rpmod/worldgen/placed_feature/saphire_ore.json",
+          "src/main/resources/assets/rpmod/blockstates/saphire_ore.json",
+          "src/main/resources/data/rpmod/neoforge/biome_modifier/saphire_ore_biome_modifier.json",
+          "src/main/java/net/mcreator/rpmod/block/SaphireOreBlock.java",
+          "src/main/resources/assets/rpmod/models/block/saphire_ore.json",
+          "src/main/resources/data/rpmod/worldgen/configured_feature/saphire_ore.json",
+          "src/main/resources/data/rpmod/loot_table/blocks/saphire_ore.json",
+          "src/main/resources/assets/rpmod/models/item/saphire_ore.json"
+        ]
+      }
+    },
+    {
+      "name": "SaphireBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "saphire_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/rpmod/loot_table/blocks/saphire_block.json",
+          "src/main/java/net/mcreator/rpmod/block/SaphireBlockBlock.java",
+          "src/main/resources/assets/rpmod/models/block/saphire_block.json",
+          "src/main/resources/assets/rpmod/models/item/saphire_block.json",
+          "src/main/resources/assets/rpmod/blockstates/saphire_block.json"
+        ]
+      }
+    },
+    {
+      "name": "SaphireOreBlockRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "saphire_ore_block_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/rpmod/advancement/recipes/saphire_ore_block_recipe.json",
+          "src/main/resources/data/rpmod/recipe/saphire_ore_block_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "SaphireBlockOreRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "saphire_block_ore_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/rpmod/advancement/recipes/saphire_block_ore_recipe.json",
+          "src/main/resources/data/rpmod/recipe/saphire_block_ore_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "SaphireOreSmelting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "saphire_ore_smelting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/rpmod/advancement/recipes/saphire_ore_smelting.json",
+          "src/main/resources/data/rpmod/recipe/saphire_ore_smelting.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -151,10 +238,14 @@
       "~Scythe@CUSTOM:Scythe"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~SaphireBlock@CUSTOM:SaphireBlock",
+      "~SaphireOre@CUSTOM:SaphireOre",
       "~RubyOre@CUSTOM:RubyOre",
       "~RubyBlock@CUSTOM:RubyBlock"
     ],
     "BLOCKS:minecraft:needs_diamond_tool": [
+      "~SaphireBlock@CUSTOM:SaphireBlock",
+      "~SaphireOre@CUSTOM:SaphireOre",
       "~RubyBlock@CUSTOM:RubyBlock"
     ],
     "BLOCKS:minecraft:needs_iron_tool": [
@@ -168,7 +259,10 @@
       "item.rpmod.scythe": "Scythe",
       "item.rpmod.ruby": "Ruby",
       "block.rpmod.ruby_ore": "Ruby Ore",
-      "block.rpmod.ruby_block": "Block of Ruby"
+      "block.rpmod.ruby_block": "Block of Ruby",
+      "item.rpmod.saphire": "Saphire",
+      "block.rpmod.saphire_ore": "Saphire Ore",
+      "block.rpmod.saphire_block": "Block of Saphire"
     }
   },
   "metadata": {
