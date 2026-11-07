@@ -12,7 +12,11 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.rpmod.item.ScytheItem;
+<<<<<<< HEAD
 import net.mcreator.rpmod.item.RubyItem;
+=======
+import net.mcreator.rpmod.item.SaphireItem;
+>>>>>>> branch 'master' of https://github.com/suky637/rp-mod
 import net.mcreator.rpmod.item.DaggerItem;
 import net.mcreator.rpmod.RpmodMod;
 
@@ -20,15 +24,27 @@ public class RpmodModItems {
 	public static final DeferredRegister.Items REGISTRY = DeferredRegister.createItems(RpmodMod.MODID);
 	public static final DeferredItem<Item> DAGGER;
 	public static final DeferredItem<Item> SCYTHE;
+<<<<<<< HEAD
 	public static final DeferredItem<Item> RUBY;
 	public static final DeferredItem<Item> RUBY_ORE;
 	public static final DeferredItem<Item> RUBY_BLOCK;
+=======
+	public static final DeferredItem<Item> SAPHIRE;
+	public static final DeferredItem<Item> SAPHIRE_ORE;
+	public static final DeferredItem<Item> SAPHIRE_BLOCK;
+>>>>>>> branch 'master' of https://github.com/suky637/rp-mod
 	static {
 		DAGGER = REGISTRY.register("dagger", DaggerItem::new);
 		SCYTHE = REGISTRY.register("scythe", ScytheItem::new);
+<<<<<<< HEAD
 		RUBY = REGISTRY.register("ruby", RubyItem::new);
 		RUBY_ORE = block(RpmodModBlocks.RUBY_ORE);
 		RUBY_BLOCK = block(RpmodModBlocks.RUBY_BLOCK);
+=======
+		SAPHIRE = REGISTRY.register("saphire", SaphireItem::new);
+		SAPHIRE_ORE = block(RpmodModBlocks.SAPHIRE_ORE);
+		SAPHIRE_BLOCK = block(RpmodModBlocks.SAPHIRE_BLOCK);
+>>>>>>> branch 'master' of https://github.com/suky637/rp-mod
 	}
 
 	// Start of user code block custom items

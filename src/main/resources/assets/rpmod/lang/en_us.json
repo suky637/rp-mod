@@ -1,7 +1,13 @@
 {
   "item.rpmod.dagger": "Dagger",
   "item.rpmod.scythe": "Scythe",
+<<<<<<< HEAD
   "item.rpmod.ruby": "Ruby",
   "block.rpmod.ruby_ore": "Ruby Ore",
   "block.rpmod.ruby_block": "Block of Ruby"
+=======
+  "item.rpmod.saphire": "Saphire",
+  "block.rpmod.saphire_ore": "Saphire Ore",
+  "block.rpmod.saphire_block": "Block of Saphire"
+>>>>>>> branch 'master' of https://github.com/suky637/rp-mod
 }

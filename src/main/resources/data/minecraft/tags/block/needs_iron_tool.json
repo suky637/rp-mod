@@ -1,6 +1,11 @@
 {
   "replace": false,
   "values": [
+<<<<<<< HEAD
     "rpmod:ruby_ore"
+=======
+    "rpmod:saphire_block",
+    "rpmod:saphire_ore"
+>>>>>>> branch 'master' of https://github.com/suky637/rp-mod
   ]
 }

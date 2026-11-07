@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "rpmod:saphire_block"
+    }
+  ],
+  "result": {
+    "id": "rpmod:saphire",
+    "count": 9
+  }
+}
