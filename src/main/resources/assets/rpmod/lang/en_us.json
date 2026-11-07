@@ -1,4 +1,7 @@
 {
   "item.rpmod.dagger": "Dagger",
-  "item.rpmod.scythe": "Scythe"
+  "item.rpmod.scythe": "Scythe",
+  "item.rpmod.saphire": "Saphire",
+  "block.rpmod.saphire_ore": "Saphire Ore",
+  "block.rpmod.saphire_block": "Block of Saphire"
 }

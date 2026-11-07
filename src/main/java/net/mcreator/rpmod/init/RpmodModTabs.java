@@ -23,6 +23,11 @@ public class RpmodModTabs {
 		if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(RpmodModItems.DAGGER.get());
 			tabData.accept(RpmodModItems.SCYTHE.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+			tabData.accept(RpmodModItems.SAPHIRE.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+			tabData.accept(RpmodModBlocks.SAPHIRE_ORE.get().asItem());
+			tabData.accept(RpmodModBlocks.SAPHIRE_BLOCK.get().asItem());
 		}
 	}
 }

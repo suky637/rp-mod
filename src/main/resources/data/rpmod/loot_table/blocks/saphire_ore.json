@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "rpmod:blocks/saphire_ore",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "rpmod:saphire"
+        }
+      ]
+    }
+  ]
+}
