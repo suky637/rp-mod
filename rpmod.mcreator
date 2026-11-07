@@ -66,7 +66,8 @@
           "src/main/java/net/mcreator/rpmod/item/RubyItem.java",
           "src/main/resources/assets/rpmod/models/item/ruby.json"
         ]
-      }
+      },
+      "path": "~/Ores/Ruby"
     },
     {
       "name": "RubyOre",
@@ -85,7 +86,8 @@
           "src/main/java/net/mcreator/rpmod/block/RubyOreBlock.java",
           "src/main/resources/data/rpmod/neoforge/biome_modifier/ruby_ore_biome_modifier.json"
         ]
-      }
+      },
+      "path": "~/Ores/Ruby"
     },
     {
       "name": "RubyBlock",
@@ -101,7 +103,8 @@
           "src/main/resources/assets/rpmod/models/item/ruby_block.json",
           "src/main/resources/assets/rpmod/models/block/ruby_block.json"
         ]
-      }
+      },
+      "path": "~/Ores/Ruby"
     },
     {
       "name": "RubyOreBlockRecipe",
@@ -114,7 +117,8 @@
           "src/main/resources/data/rpmod/advancement/recipes/ruby_ore_block_recipe.json",
           "src/main/resources/data/rpmod/recipe/ruby_ore_block_recipe.json"
         ]
-      }
+      },
+      "path": "~/Ores/Ruby"
     },
     {
       "name": "RubyBlockOreRecipe",
@@ -127,7 +131,8 @@
           "src/main/resources/data/rpmod/advancement/recipes/ruby_block_ore_recipe.json",
           "src/main/resources/data/rpmod/recipe/ruby_block_ore_recipe.json"
         ]
-      }
+      },
+      "path": "~/Ores/Ruby"
     },
     {
       "name": "RubyOreSmelting",
@@ -140,7 +145,8 @@
           "src/main/resources/data/rpmod/recipe/ruby_ore_smelting.json",
           "src/main/resources/data/rpmod/advancement/recipes/ruby_ore_smelting.json"
         ]
-      }
+      },
+      "path": "~/Ores/Ruby"
     },
     {
       "name": "Saphire",
@@ -153,7 +159,8 @@
           "src/main/resources/assets/rpmod/models/item/saphire.json",
           "src/main/java/net/mcreator/rpmod/item/SaphireItem.java"
         ]
-      }
+      },
+      "path": "~/Ores/Saphire"
     },
     {
       "name": "SaphireOre",
@@ -172,7 +179,8 @@
           "src/main/resources/data/rpmod/loot_table/blocks/saphire_ore.json",
           "src/main/resources/assets/rpmod/models/item/saphire_ore.json"
         ]
-      }
+      },
+      "path": "~/Ores/Saphire"
     },
     {
       "name": "SaphireBlock",
@@ -188,7 +196,8 @@
           "src/main/resources/assets/rpmod/models/item/saphire_block.json",
           "src/main/resources/assets/rpmod/blockstates/saphire_block.json"
         ]
-      }
+      },
+      "path": "~/Ores/Saphire"
     },
     {
       "name": "SaphireOreBlockRecipe",
@@ -201,7 +210,8 @@
           "src/main/resources/data/rpmod/advancement/recipes/saphire_ore_block_recipe.json",
           "src/main/resources/data/rpmod/recipe/saphire_ore_block_recipe.json"
         ]
-      }
+      },
+      "path": "~/Ores/Saphire"
     },
     {
       "name": "SaphireBlockOreRecipe",
@@ -214,7 +224,8 @@
           "src/main/resources/data/rpmod/advancement/recipes/saphire_block_ore_recipe.json",
           "src/main/resources/data/rpmod/recipe/saphire_block_ore_recipe.json"
         ]
-      }
+      },
+      "path": "~/Ores/Saphire"
     },
     {
       "name": "SaphireOreSmelting",
@@ -227,7 +238,8 @@
           "src/main/resources/data/rpmod/advancement/recipes/saphire_ore_smelting.json",
           "src/main/resources/data/rpmod/recipe/saphire_ore_smelting.json"
         ]
-      }
+      },
+      "path": "~/Ores/Saphire"
     }
   ],
   "variable_elements": [],
@@ -283,6 +295,19 @@
         "children": [
           {
             "name": "Recipes",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Ores",
+        "children": [
+          {
+            "name": "Saphire",
+            "children": []
+          },
+          {
+            "name": "Ruby",
             "children": []
           }
         ]
