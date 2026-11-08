@@ -41,8 +41,9 @@ public class OnProjectileProcedure {
 				} else if (sourceentity.getData(RpmodModVariables.PLAYER_VARIABLES).player_arrow_skill == 3) {
 					entity.igniteForSeconds(15);
 				} else if (sourceentity.getData(RpmodModVariables.PLAYER_VARIABLES).player_arrow_skill == 4) {
+					entity.igniteForSeconds(15);
 					if (world instanceof Level _level && !_level.isClientSide())
-						_level.explode(null, x, y, z, 3, Level.ExplosionInteraction.TNT);
+						_level.explode(null, x, y, z, 1, Level.ExplosionInteraction.TNT);
 				}
 			}
 		}
