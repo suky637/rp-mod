@@ -589,8 +589,8 @@
       "~Scythe@CUSTOM:Scythe"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
-      "~TopazBlock@CUSTOM:TopazBlock",
       "~TopazOre@CUSTOM:TopazOre",
+      "~TopazBlock@CUSTOM:TopazBlock",
       "~SaphireBlock@CUSTOM:SaphireBlock",
       "~SaphireOre@CUSTOM:SaphireOre",
       "~RubyOre@CUSTOM:RubyOre",
@@ -602,9 +602,12 @@
       "~RubyBlock@CUSTOM:RubyBlock"
     ],
     "BLOCKS:minecraft:needs_iron_tool": [
-      "~TopazBlock@CUSTOM:TopazBlock",
       "~TopazOre@CUSTOM:TopazOre",
+      "~TopazBlock@CUSTOM:TopazBlock",
       "~RubyOre@CUSTOM:RubyOre"
+    ],
+    "ITEMS:forge:topaz": [
+      "CUSTOM:Topaz"
     ]
   },
   "tab_element_order": {},
