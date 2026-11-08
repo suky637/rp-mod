@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "rpmod:block/topaz_ore_block",
+    "particle": "rpmod:block/topaz_ore_block"
+  },
+  "render_type": "solid"
+}

@@ -4,6 +4,8 @@
     "rpmod:saphire_block",
     "rpmod:saphire_ore",
     "rpmod:ruby_ore",
+    "rpmod:topaz_ore",
+    "rpmod:topaz_block",
     "rpmod:ruby_block"
   ]
 }

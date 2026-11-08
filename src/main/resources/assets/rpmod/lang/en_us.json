@@ -8,5 +8,8 @@
   "block.rpmod.saphire_ore": "Saphire Ore",
   "block.rpmod.saphire_block": "Block of Saphire",
   "gui.rpmod.skill_tree.button_upg_arrow": "Upg Arrow",
-  "key.rpmod.skill_tree_k": "Access the skill tree"
+  "key.rpmod.skill_tree_k": "Access the skill tree",
+  "item.rpmod.topaz": "Topaz",
+  "block.rpmod.topaz_ore": "Topaz Ore",
+  "block.rpmod.topaz_block": "Block of Topaz"
 }

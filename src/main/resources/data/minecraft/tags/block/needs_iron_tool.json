@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "rpmod:ruby_ore"
+    "rpmod:ruby_ore",
+    "rpmod:topaz_ore",
+    "rpmod:topaz_block"
   ]
 }

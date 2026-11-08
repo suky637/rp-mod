@@ -13,18 +13,6 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "recipeSlots": [
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
-    ],
-    "recipeReturnStack": "",
     "smeltingInputStack": "CUSTOM:SaphireOre",
     "smeltingReturnStack": "CUSTOM:Saphire",
     "name": "saphire_ore_smelting",

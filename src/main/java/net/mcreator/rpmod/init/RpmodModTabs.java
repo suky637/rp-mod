@@ -26,11 +26,14 @@ public class RpmodModTabs {
 		} else if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
 			tabData.accept(RpmodModItems.RUBY.get());
 			tabData.accept(RpmodModItems.SAPHIRE.get());
+			tabData.accept(RpmodModItems.TOPAZ.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
 			tabData.accept(RpmodModBlocks.RUBY_ORE.get().asItem());
 			tabData.accept(RpmodModBlocks.RUBY_BLOCK.get().asItem());
 			tabData.accept(RpmodModBlocks.SAPHIRE_ORE.get().asItem());
 			tabData.accept(RpmodModBlocks.SAPHIRE_BLOCK.get().asItem());
+			tabData.accept(RpmodModBlocks.TOPAZ_ORE.get().asItem());
+			tabData.accept(RpmodModBlocks.TOPAZ_BLOCK.get().asItem());
 		}
 	}
 }
