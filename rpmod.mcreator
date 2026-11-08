@@ -580,6 +580,30 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
+    },
+    {
+      "name": "mana",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "max_mana",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "player_mana",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "max_player_mana",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "100.0"
     }
   ],
   "sound_elements": [],
