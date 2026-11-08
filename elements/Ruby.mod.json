@@ -12,7 +12,7 @@
     "name": "Ruby",
     "rarity": "COMMON",
     "creativeTabs": [
-      "MATERIALS"
+      "CUSTOM:RPModcore"
     ],
     "stackSize": 64,
     "enchantability": 0,

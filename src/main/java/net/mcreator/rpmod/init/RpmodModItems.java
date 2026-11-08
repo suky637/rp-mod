@@ -11,11 +11,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
-import net.mcreator.rpmod.item.TopazItem;
-import net.mcreator.rpmod.item.ScytheItem;
-import net.mcreator.rpmod.item.SaphireItem;
-import net.mcreator.rpmod.item.RubyItem;
-import net.mcreator.rpmod.item.DaggerItem;
+import net.mcreator.rpmod.item.*;
 import net.mcreator.rpmod.RpmodMod;
 
 public class RpmodModItems {
@@ -31,6 +27,7 @@ public class RpmodModItems {
 	public static final DeferredItem<Item> TOPAZ;
 	public static final DeferredItem<Item> TOPAZ_ORE;
 	public static final DeferredItem<Item> TOPAZ_BLOCK;
+	public static final DeferredItem<Item> BASICWAND;
 	static {
 		DAGGER = REGISTRY.register("dagger", DaggerItem::new);
 		SCYTHE = REGISTRY.register("scythe", ScytheItem::new);
@@ -43,6 +40,7 @@ public class RpmodModItems {
 		TOPAZ = REGISTRY.register("topaz", TopazItem::new);
 		TOPAZ_ORE = block(RpmodModBlocks.TOPAZ_ORE);
 		TOPAZ_BLOCK = block(RpmodModBlocks.TOPAZ_BLOCK);
+		BASICWAND = REGISTRY.register("basicwand", BasicwandItem::new);
 	}
 
 	// Start of user code block custom items

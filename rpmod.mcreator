@@ -8,8 +8,8 @@
       "registry_name": "dagger",
       "metadata": {
         "files": [
-          "src/main/resources/assets/rpmod/models/item/dagger.json",
-          "src/main/java/net/mcreator/rpmod/item/DaggerItem.java"
+          "src/main/java/net/mcreator/rpmod/item/DaggerItem.java",
+          "src/main/resources/assets/rpmod/models/item/dagger.json"
         ]
       },
       "path": "~/Weapons"
@@ -470,8 +470,8 @@
       "registry_name": "topaz",
       "metadata": {
         "files": [
-          "src/main/resources/assets/rpmod/models/item/topaz.json",
-          "src/main/java/net/mcreator/rpmod/item/TopazItem.java"
+          "src/main/java/net/mcreator/rpmod/item/TopazItem.java",
+          "src/main/resources/assets/rpmod/models/item/topaz.json"
         ]
       },
       "path": "~/Ores/Topaz"
@@ -484,14 +484,14 @@
       "registry_name": "topaz_ore",
       "metadata": {
         "files": [
+          "src/main/resources/data/rpmod/worldgen/configured_feature/topaz_ore.json",
+          "src/main/resources/data/rpmod/loot_table/blocks/topaz_ore.json",
           "src/main/resources/assets/rpmod/models/block/topaz_ore.json",
           "src/main/resources/data/rpmod/worldgen/placed_feature/topaz_ore.json",
-          "src/main/java/net/mcreator/rpmod/block/TopazOreBlock.java",
           "src/main/resources/assets/rpmod/models/item/topaz_ore.json",
-          "src/main/resources/assets/rpmod/blockstates/topaz_ore.json",
-          "src/main/resources/data/rpmod/loot_table/blocks/topaz_ore.json",
           "src/main/resources/data/rpmod/neoforge/biome_modifier/topaz_ore_biome_modifier.json",
-          "src/main/resources/data/rpmod/worldgen/configured_feature/topaz_ore.json"
+          "src/main/java/net/mcreator/rpmod/block/TopazOreBlock.java",
+          "src/main/resources/assets/rpmod/blockstates/topaz_ore.json"
         ]
       },
       "path": "~/Ores/Topaz"
@@ -504,10 +504,10 @@
       "registry_name": "topaz_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/rpmod/models/item/topaz_block.json",
           "src/main/resources/assets/rpmod/models/block/topaz_block.json",
           "src/main/resources/assets/rpmod/blockstates/topaz_block.json",
           "src/main/java/net/mcreator/rpmod/block/TopazBlockBlock.java",
+          "src/main/resources/assets/rpmod/models/item/topaz_block.json",
           "src/main/resources/data/rpmod/loot_table/blocks/topaz_block.json"
         ]
       },
@@ -554,6 +554,31 @@
         ]
       },
       "path": "~/Ores/Topaz"
+    },
+    {
+      "name": "Basicwand",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basicwand",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/rpmod/item/BasicwandItem.java",
+          "src/main/resources/assets/rpmod/models/item/basicwand.json"
+        ]
+      },
+      "path": "~/Magic/Wands"
+    },
+    {
+      "name": "RPModcore",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rp_modcore",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Tabs"
     }
   ],
   "variable_elements": [
@@ -609,29 +634,32 @@
   "sound_elements": [],
   "tag_elements": {
     "ITEMS:minecraft:swords": [
-      "~Dagger@CUSTOM:Dagger",
-      "~Scythe@CUSTOM:Scythe"
+      "~Scythe@CUSTOM:Scythe",
+      "~Dagger@CUSTOM:Dagger"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
-      "~TopazOre@CUSTOM:TopazOre",
       "~TopazBlock@CUSTOM:TopazBlock",
-      "~SaphireBlock@CUSTOM:SaphireBlock",
-      "~SaphireOre@CUSTOM:SaphireOre",
+      "~TopazOre@CUSTOM:TopazOre",
+      "~RubyBlock@CUSTOM:RubyBlock",
       "~RubyOre@CUSTOM:RubyOre",
-      "~RubyBlock@CUSTOM:RubyBlock"
+      "~SaphireBlock@CUSTOM:SaphireBlock",
+      "~SaphireOre@CUSTOM:SaphireOre"
     ],
     "BLOCKS:minecraft:needs_diamond_tool": [
+      "~RubyBlock@CUSTOM:RubyBlock",
       "~SaphireBlock@CUSTOM:SaphireBlock",
-      "~SaphireOre@CUSTOM:SaphireOre",
-      "~RubyBlock@CUSTOM:RubyBlock"
+      "~SaphireOre@CUSTOM:SaphireOre"
     ],
     "BLOCKS:minecraft:needs_iron_tool": [
-      "~TopazOre@CUSTOM:TopazOre",
       "~TopazBlock@CUSTOM:TopazBlock",
+      "~TopazOre@CUSTOM:TopazOre",
       "~RubyOre@CUSTOM:RubyOre"
     ],
     "ITEMS:forge:topaz": [
       "CUSTOM:Topaz"
+    ],
+    "ITEMS:minecraft:enchantable/durability": [
+      "~Basicwand@CUSTOM:Basicwand"
     ]
   },
   "tab_element_order": {},
@@ -649,22 +677,24 @@
       "key.rpmod.skill_tree_k": "Access the skill tree",
       "item.rpmod.topaz": "Topaz",
       "block.rpmod.topaz_ore": "Topaz Ore",
-      "block.rpmod.topaz_block": "Block of Topaz"
+      "block.rpmod.topaz_block": "Block of Topaz",
+      "item.rpmod.basicwand": "Basic Wand",
+      "item_group.rpmod.rp_modcore": "RP Mod — Core"
     }
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/rpmod/init/RpmodModScreens.java",
       "src/main/java/net/mcreator/rpmod/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/rpmod/init/RpmodModScreens.java",
       "src/main/java/net/mcreator/rpmod/init/RpmodModMenus.java",
       "src/main/java/net/mcreator/rpmod/init/RpmodModKeyMappings.java",
       "src/main/java/net/mcreator/rpmod/init/RpmodModBlocks.java",
       "src/main/java/net/mcreator/rpmod/init/RpmodModItems.java",
+      "src/main/java/net/mcreator/rpmod/init/RpmodModTabs.java",
+      "src/main/resources/pack.mcmeta",
       "src/main/java/net/mcreator/rpmod/network/RpmodModVariables.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/java/net/mcreator/rpmod/init/RpmodModTabs.java",
-      "src/main/java/net/mcreator/rpmod/RpmodMod.java",
-      "src/main/resources/pack.mcmeta"
+      "src/main/java/net/mcreator/rpmod/RpmodMod.java"
     ]
   },
   "foldersRoot": {
@@ -702,6 +732,19 @@
       },
       {
         "name": "Scripts",
+        "children": []
+      },
+      {
+        "name": "Magic",
+        "children": [
+          {
+            "name": "Wands",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Tabs",
         "children": []
       }
     ]

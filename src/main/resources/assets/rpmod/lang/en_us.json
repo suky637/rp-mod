@@ -11,5 +11,7 @@
   "key.rpmod.skill_tree_k": "Access the skill tree",
   "item.rpmod.topaz": "Topaz",
   "block.rpmod.topaz_ore": "Topaz Ore",
-  "block.rpmod.topaz_block": "Block of Topaz"
+  "block.rpmod.topaz_block": "Block of Topaz",
+  "item.rpmod.basicwand": "Basic Wand",
+  "item_group.rpmod.rp_modcore": "RP Mod — Core"
 }

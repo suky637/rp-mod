@@ -51,7 +51,7 @@
     "rarity": "COMMON",
     "immuneToFire": false,
     "creativeTabs": [
-      "BUILDING_BLOCKS"
+      "CUSTOM:RPModcore"
     ],
     "destroyTool": "pickaxe",
     "customDrop": "CUSTOM:Topaz",
