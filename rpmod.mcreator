@@ -470,8 +470,8 @@
       "registry_name": "topaz",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/rpmod/item/TopazItem.java",
-          "src/main/resources/assets/rpmod/models/item/topaz.json"
+          "src/main/resources/assets/rpmod/models/item/topaz.json",
+          "src/main/java/net/mcreator/rpmod/item/TopazItem.java"
         ]
       },
       "path": "~/Ores/Topaz"
@@ -815,17 +815,17 @@
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/rpmod/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/rpmod/init/RpmodModScreens.java",
+      "src/main/java/net/mcreator/rpmod/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/rpmod/init/RpmodModMenus.java",
       "src/main/java/net/mcreator/rpmod/init/RpmodModKeyMappings.java",
       "src/main/java/net/mcreator/rpmod/init/RpmodModBlocks.java",
       "src/main/java/net/mcreator/rpmod/init/RpmodModItems.java",
-      "src/main/java/net/mcreator/rpmod/init/RpmodModTabs.java",
-      "src/main/resources/pack.mcmeta",
       "src/main/java/net/mcreator/rpmod/network/RpmodModVariables.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/java/net/mcreator/rpmod/RpmodMod.java"
+      "src/main/java/net/mcreator/rpmod/init/RpmodModTabs.java",
+      "src/main/java/net/mcreator/rpmod/RpmodMod.java",
+      "src/main/resources/pack.mcmeta"
     ]
   },
   "foldersRoot": {

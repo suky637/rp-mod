@@ -13,18 +13,6 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "recipeSlots": [
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
-    ],
-    "recipeReturnStack": "",
     "smeltingInputStack": "CUSTOM:TopazOre",
     "smeltingReturnStack": "CUSTOM:Topaz",
     "name": "topaz_ore_smelting",
