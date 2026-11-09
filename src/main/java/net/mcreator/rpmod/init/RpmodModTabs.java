@@ -28,5 +28,9 @@ public class RpmodModTabs {
 				tabData.accept(RpmodModItems.TOPAZ.get());
 				tabData.accept(RpmodModBlocks.TOPAZ_ORE.get().asItem());
 				tabData.accept(RpmodModBlocks.TOPAZ_BLOCK.get().asItem());
+				tabData.accept(RpmodModItems.BASICWAND.get());
+				tabData.accept(RpmodModBlocks.LV_RECEIVER.get().asItem());
+				tabData.accept(RpmodModBlocks.LV_TRANSMITTER.get().asItem());
+				tabData.accept(RpmodModBlocks.LV_BATTERY.get().asItem());
 			}).build());
 }

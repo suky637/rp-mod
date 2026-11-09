@@ -28,6 +28,9 @@ public class RpmodModItems {
 	public static final DeferredItem<Item> TOPAZ_ORE;
 	public static final DeferredItem<Item> TOPAZ_BLOCK;
 	public static final DeferredItem<Item> BASICWAND;
+	public static final DeferredItem<Item> LV_RECEIVER;
+	public static final DeferredItem<Item> LV_TRANSMITTER;
+	public static final DeferredItem<Item> LV_BATTERY;
 	static {
 		DAGGER = REGISTRY.register("dagger", DaggerItem::new);
 		SCYTHE = REGISTRY.register("scythe", ScytheItem::new);
@@ -41,6 +44,9 @@ public class RpmodModItems {
 		TOPAZ_ORE = block(RpmodModBlocks.TOPAZ_ORE);
 		TOPAZ_BLOCK = block(RpmodModBlocks.TOPAZ_BLOCK);
 		BASICWAND = REGISTRY.register("basicwand", BasicwandItem::new);
+		LV_RECEIVER = block(RpmodModBlocks.LV_RECEIVER);
+		LV_TRANSMITTER = block(RpmodModBlocks.LV_TRANSMITTER);
+		LV_BATTERY = block(RpmodModBlocks.LV_BATTERY);
 	}
 
 	// Start of user code block custom items

@@ -160,6 +160,8 @@ public class RpmodModVariables {
 		boolean _syncDirty = false;
 		public double mana = 0;
 		public double max_mana = 0;
+		public double lv_energy = 0;
+		public double lv_max_energy = 0;
 
 		public static MapVariables load(CompoundTag tag, HolderLookup.Provider lookupProvider) {
 			MapVariables data = new MapVariables();
@@ -170,12 +172,16 @@ public class RpmodModVariables {
 		public void read(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
 			mana = nbt.getDouble("mana");
 			max_mana = nbt.getDouble("max_mana");
+			lv_energy = nbt.getDouble("lv_energy");
+			lv_max_energy = nbt.getDouble("lv_max_energy");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
 			nbt.putDouble("mana", mana);
 			nbt.putDouble("max_mana", max_mana);
+			nbt.putDouble("lv_energy", lv_energy);
+			nbt.putDouble("lv_max_energy", lv_max_energy);
 			return nbt;
 		}
 

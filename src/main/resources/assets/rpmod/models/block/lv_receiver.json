@@ -1,0 +1,9 @@
+{
+  "parent": "rpmod:custom/lv_receiver",
+  "textures": {
+    "all": "rpmod:block/lv_receiver",
+    "particle": "rpmod:block/lv_receiver",
+    "0": "rpmod:block/lv_receiver"
+  },
+  "render_type": "solid"
+}

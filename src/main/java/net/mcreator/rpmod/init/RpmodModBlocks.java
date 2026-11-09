@@ -19,6 +19,9 @@ public class RpmodModBlocks {
 	public static final DeferredBlock<Block> SAPHIRE_BLOCK;
 	public static final DeferredBlock<Block> TOPAZ_ORE;
 	public static final DeferredBlock<Block> TOPAZ_BLOCK;
+	public static final DeferredBlock<Block> LV_RECEIVER;
+	public static final DeferredBlock<Block> LV_TRANSMITTER;
+	public static final DeferredBlock<Block> LV_BATTERY;
 	static {
 		RUBY_ORE = REGISTRY.register("ruby_ore", RubyOreBlock::new);
 		RUBY_BLOCK = REGISTRY.register("ruby_block", RubyBlockBlock::new);
@@ -26,6 +29,9 @@ public class RpmodModBlocks {
 		SAPHIRE_BLOCK = REGISTRY.register("saphire_block", SaphireBlockBlock::new);
 		TOPAZ_ORE = REGISTRY.register("topaz_ore", TopazOreBlock::new);
 		TOPAZ_BLOCK = REGISTRY.register("topaz_block", TopazBlockBlock::new);
+		LV_RECEIVER = REGISTRY.register("lv_receiver", LVReceiverBlock::new);
+		LV_TRANSMITTER = REGISTRY.register("lv_transmitter", LVTransmitterBlock::new);
+		LV_BATTERY = REGISTRY.register("lv_battery", LVBatteryBlock::new);
 	}
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

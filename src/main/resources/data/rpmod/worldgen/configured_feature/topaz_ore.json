@@ -12,6 +12,20 @@
         "state": {
           "Name": "rpmod:topaz_ore"
         }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:deepslate",
+            "Properties": {
+              "axis": "y"
+            }
+          }
+        },
+        "state": {
+          "Name": "rpmod:topaz_ore"
+        }
       }
     ]
   }

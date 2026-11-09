@@ -579,6 +579,122 @@
         "files": []
       },
       "path": "~/Tabs"
+    },
+    {
+      "name": "BasicwandRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basicwand_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/rpmod/procedures/BasicwandRightclickedProcedure.java"
+        ]
+      },
+      "path": "~/Magic/Wands"
+    },
+    {
+      "name": "LVReceiver",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lv_receiver",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/rpmod/models/block/lv_receiver.json",
+          "src/main/resources/assets/rpmod/blockstates/lv_receiver.json",
+          "src/main/java/net/mcreator/rpmod/block/LVReceiverBlock.java",
+          "src/main/resources/assets/rpmod/models/item/lv_receiver.json",
+          "src/main/resources/data/rpmod/loot_table/blocks/lv_receiver.json"
+        ]
+      },
+      "path": "~/Energy/LV/Transport"
+    },
+    {
+      "name": "LVTransmitter",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lv_transmitter",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/rpmod/blockstates/lv_transmitter.json",
+          "src/main/resources/assets/rpmod/models/block/lv_transmitter.json",
+          "src/main/resources/assets/rpmod/models/item/lv_transmitter.json",
+          "src/main/java/net/mcreator/rpmod/block/LVTransmitterBlock.java",
+          "src/main/resources/data/rpmod/loot_table/blocks/lv_transmitter.json"
+        ]
+      },
+      "path": "~/Energy/LV/Transport"
+    },
+    {
+      "name": "LVBattery",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lv_battery",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/rpmod/models/block/lv_battery.json",
+          "src/main/java/net/mcreator/rpmod/block/LVBatteryBlock.java",
+          "src/main/resources/assets/rpmod/models/item/lv_battery.json",
+          "src/main/resources/data/rpmod/loot_table/blocks/lv_battery.json",
+          "src/main/resources/assets/rpmod/blockstates/lv_battery.json"
+        ]
+      },
+      "path": "~/Energy/LV/Storage"
+    },
+    {
+      "name": "LVBatteryBlockAdded",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lv_battery_block_added",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/rpmod/procedures/LVBatteryBlockAddedProcedure.java"
+        ]
+      },
+      "path": "~/Energy/LV/Storage"
+    },
+    {
+      "name": "LVBatteryBlockDestroyedByExplosion",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lv_battery_block_destroyed_by_explosion",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/rpmod/procedures/LVBatteryBlockDestroyedByExplosionProcedure.java"
+        ]
+      },
+      "path": "~/Energy/LV/Storage"
     }
   ],
   "variable_elements": [
@@ -629,6 +745,18 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "100.0"
+    },
+    {
+      "name": "lv_energy",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "lv_max_energy",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
     }
   ],
   "sound_elements": [],
@@ -638,22 +766,22 @@
       "~Dagger@CUSTOM:Dagger"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
-      "~TopazBlock@CUSTOM:TopazBlock",
       "~TopazOre@CUSTOM:TopazOre",
-      "~RubyBlock@CUSTOM:RubyBlock",
       "~RubyOre@CUSTOM:RubyOre",
-      "~SaphireBlock@CUSTOM:SaphireBlock",
-      "~SaphireOre@CUSTOM:SaphireOre"
+      "~SaphireOre@CUSTOM:SaphireOre",
+      "~TopazBlock@CUSTOM:TopazBlock",
+      "~RubyBlock@CUSTOM:RubyBlock",
+      "~SaphireBlock@CUSTOM:SaphireBlock"
     ],
     "BLOCKS:minecraft:needs_diamond_tool": [
+      "~SaphireOre@CUSTOM:SaphireOre",
       "~RubyBlock@CUSTOM:RubyBlock",
-      "~SaphireBlock@CUSTOM:SaphireBlock",
-      "~SaphireOre@CUSTOM:SaphireOre"
+      "~SaphireBlock@CUSTOM:SaphireBlock"
     ],
     "BLOCKS:minecraft:needs_iron_tool": [
-      "~TopazBlock@CUSTOM:TopazBlock",
       "~TopazOre@CUSTOM:TopazOre",
-      "~RubyOre@CUSTOM:RubyOre"
+      "~RubyOre@CUSTOM:RubyOre",
+      "~TopazBlock@CUSTOM:TopazBlock"
     ],
     "ITEMS:forge:topaz": [
       "CUSTOM:Topaz"
@@ -679,7 +807,10 @@
       "block.rpmod.topaz_ore": "Topaz Ore",
       "block.rpmod.topaz_block": "Block of Topaz",
       "item.rpmod.basicwand": "Basic Wand",
-      "item_group.rpmod.rp_modcore": "RP Mod — Core"
+      "item_group.rpmod.rp_modcore": "RP Mod — Core",
+      "block.rpmod.lv_receiver": "LV Receiver",
+      "block.rpmod.lv_transmitter": "LV Transmitter",
+      "block.rpmod.lv_battery": "LV Battery"
     }
   },
   "metadata": {
@@ -746,6 +877,32 @@
       {
         "name": "Tabs",
         "children": []
+      },
+      {
+        "name": "Energy",
+        "children": [
+          {
+            "name": "LV",
+            "children": [
+              {
+                "name": "Transport",
+                "children": []
+              },
+              {
+                "name": "Generators",
+                "children": []
+              },
+              {
+                "name": "Storage",
+                "children": []
+              },
+              {
+                "name": "Machines",
+                "children": []
+              }
+            ]
+          }
+        ]
       }
     ]
   },

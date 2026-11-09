@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "rpmod:block/machine_hull",
+    "up": "rpmod:block/machine_hull",
+    "north": "rpmod:block/machine_hull",
+    "east": "rpmod:block/machine_hull",
+    "south": "rpmod:block/machine_hull",
+    "west": "rpmod:block/machine_hull",
+    "particle": "rpmod:block/machine_hull"
+  },
+  "render_type": "solid"
+}

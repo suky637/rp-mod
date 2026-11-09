@@ -126,7 +126,8 @@
       "#is_overworld"
     ],
     "blocksToReplace": [
-      "TAG:stone_ore_replaceables"
+      "TAG:stone_ore_replaceables",
+      "Blocks.DEEPSLATE"
     ],
     "generationShape": "UNIFORM",
     "frequencyPerChunks": 11,

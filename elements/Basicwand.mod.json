@@ -11,7 +11,9 @@
     "animations": [],
     "name": "Basic Wand",
     "rarity": "COMMON",
-    "creativeTabs": [],
+    "creativeTabs": [
+      "CUSTOM:RPModcore"
+    ],
     "stackSize": 1,
     "enchantability": 0,
     "useDuration": 0,
@@ -38,6 +40,7 @@
     },
     "inventorySize": 9,
     "inventoryStackSize": 99,
+    "onRightClickedInAir": "BasicwandRightclicked",
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,

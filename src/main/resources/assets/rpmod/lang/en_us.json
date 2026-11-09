@@ -13,5 +13,8 @@
   "block.rpmod.topaz_ore": "Topaz Ore",
   "block.rpmod.topaz_block": "Block of Topaz",
   "item.rpmod.basicwand": "Basic Wand",
-  "item_group.rpmod.rp_modcore": "RP Mod — Core"
+  "item_group.rpmod.rp_modcore": "RP Mod — Core",
+  "block.rpmod.lv_receiver": "LV Receiver",
+  "block.rpmod.lv_transmitter": "LV Transmitter",
+  "block.rpmod.lv_battery": "LV Battery"
 }
