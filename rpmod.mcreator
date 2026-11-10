@@ -484,14 +484,14 @@
       "registry_name": "topaz_ore",
       "metadata": {
         "files": [
-          "src/main/resources/data/rpmod/worldgen/configured_feature/topaz_ore.json",
-          "src/main/resources/data/rpmod/loot_table/blocks/topaz_ore.json",
           "src/main/resources/assets/rpmod/models/block/topaz_ore.json",
           "src/main/resources/data/rpmod/worldgen/placed_feature/topaz_ore.json",
-          "src/main/resources/assets/rpmod/models/item/topaz_ore.json",
-          "src/main/resources/data/rpmod/neoforge/biome_modifier/topaz_ore_biome_modifier.json",
           "src/main/java/net/mcreator/rpmod/block/TopazOreBlock.java",
-          "src/main/resources/assets/rpmod/blockstates/topaz_ore.json"
+          "src/main/resources/assets/rpmod/models/item/topaz_ore.json",
+          "src/main/resources/assets/rpmod/blockstates/topaz_ore.json",
+          "src/main/resources/data/rpmod/loot_table/blocks/topaz_ore.json",
+          "src/main/resources/data/rpmod/neoforge/biome_modifier/topaz_ore_biome_modifier.json",
+          "src/main/resources/data/rpmod/worldgen/configured_feature/topaz_ore.json"
         ]
       },
       "path": "~/Ores/Topaz"

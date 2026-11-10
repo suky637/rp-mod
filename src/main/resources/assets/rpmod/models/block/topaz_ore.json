@@ -1,8 +1,13 @@
 {
-  "parent": "block/cube_all",
+  "parent": "block/cube",
   "textures": {
-    "all": "rpmod:block/topaz_ore",
-    "particle": "rpmod:block/topaz_ore"
+    "down": "rpmod:block/deepslate_south",
+    "up": "rpmod:block/topam",
+    "north": "rpmod:block/deepslate_north",
+    "east": "rpmod:block/deepslate_east",
+    "south": "rpmod:block/deepslate_south",
+    "west": "rpmod:block/deepslate_west",
+    "particle": "rpmod:block/deepslate_south"
   },
   "render_type": "solid"
 }

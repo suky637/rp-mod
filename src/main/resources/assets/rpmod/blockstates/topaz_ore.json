@@ -1,7 +1,16 @@
 {
   "variants": {
-    "": {
+    "axis=x": {
+      "model": "rpmod:block/topaz_ore",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
       "model": "rpmod:block/topaz_ore"
+    },
+    "axis=z": {
+      "model": "rpmod:block/topaz_ore",
+      "x": 90
     }
   }
 }
