@@ -16,6 +16,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.rpmod.world.inventory.SkillTreeMenu;
+import net.mcreator.rpmod.world.inventory.LVGemExtractorGUIMenu;
 import net.mcreator.rpmod.network.MenuStateUpdateMessage;
 import net.mcreator.rpmod.RpmodMod;
 
@@ -24,6 +25,7 @@ import java.util.Map;
 public class RpmodModMenus {
 	public static final DeferredRegister<MenuType<?>> REGISTRY = DeferredRegister.create(Registries.MENU, RpmodMod.MODID);
 	public static final DeferredHolder<MenuType<?>, MenuType<SkillTreeMenu>> SKILL_TREE = REGISTRY.register("skill_tree", () -> IMenuTypeExtension.create(SkillTreeMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<LVGemExtractorGUIMenu>> LV_GEM_EXTRACTOR_GUI = REGISTRY.register("lv_gem_extractor_gui", () -> IMenuTypeExtension.create(LVGemExtractorGUIMenu::new));
 
 	public interface MenuAccessor {
 		Map<String, Object> getMenuState();

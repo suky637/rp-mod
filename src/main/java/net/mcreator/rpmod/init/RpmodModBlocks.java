@@ -22,6 +22,7 @@ public class RpmodModBlocks {
 	public static final DeferredBlock<Block> LV_RECEIVER;
 	public static final DeferredBlock<Block> LV_TRANSMITTER;
 	public static final DeferredBlock<Block> LV_BATTERY;
+	public static final DeferredBlock<Block> LV_GEM_EXTRACTOR;
 	static {
 		RUBY_ORE = REGISTRY.register("ruby_ore", RubyOreBlock::new);
 		RUBY_BLOCK = REGISTRY.register("ruby_block", RubyBlockBlock::new);
@@ -32,6 +33,7 @@ public class RpmodModBlocks {
 		LV_RECEIVER = REGISTRY.register("lv_receiver", LVReceiverBlock::new);
 		LV_TRANSMITTER = REGISTRY.register("lv_transmitter", LVTransmitterBlock::new);
 		LV_BATTERY = REGISTRY.register("lv_battery", LVBatteryBlock::new);
+		LV_GEM_EXTRACTOR = REGISTRY.register("lv_gem_extractor", LVGemExtractorBlock::new);
 	}
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

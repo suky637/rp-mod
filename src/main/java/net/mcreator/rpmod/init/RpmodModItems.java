@@ -31,6 +31,7 @@ public class RpmodModItems {
 	public static final DeferredItem<Item> LV_RECEIVER;
 	public static final DeferredItem<Item> LV_TRANSMITTER;
 	public static final DeferredItem<Item> LV_BATTERY;
+	public static final DeferredItem<Item> LV_GEM_EXTRACTOR;
 	static {
 		DAGGER = REGISTRY.register("dagger", DaggerItem::new);
 		SCYTHE = REGISTRY.register("scythe", ScytheItem::new);
@@ -47,6 +48,7 @@ public class RpmodModItems {
 		LV_RECEIVER = block(RpmodModBlocks.LV_RECEIVER);
 		LV_TRANSMITTER = block(RpmodModBlocks.LV_TRANSMITTER);
 		LV_BATTERY = block(RpmodModBlocks.LV_BATTERY);
+		LV_GEM_EXTRACTOR = block(RpmodModBlocks.LV_GEM_EXTRACTOR);
 	}
 
 	// Start of user code block custom items

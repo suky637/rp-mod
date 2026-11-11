@@ -23,6 +23,7 @@ import net.mcreator.rpmod.init.RpmodModTabs;
 import net.mcreator.rpmod.init.RpmodModMenus;
 import net.mcreator.rpmod.init.RpmodModItems;
 import net.mcreator.rpmod.init.RpmodModBlocks;
+import net.mcreator.rpmod.init.RpmodModBlockEntities;
 
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.Queue;
@@ -45,6 +46,7 @@ public class RpmodMod {
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
 		RpmodModBlocks.REGISTRY.register(modEventBus);
+		RpmodModBlockEntities.REGISTRY.register(modEventBus);
 		RpmodModItems.REGISTRY.register(modEventBus);
 		RpmodModTabs.REGISTRY.register(modEventBus);
 		RpmodModVariables.ATTACHMENT_TYPES.register(modEventBus);

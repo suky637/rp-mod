@@ -16,5 +16,8 @@
   "item_group.rpmod.rp_modcore": "RP Mod — Core",
   "block.rpmod.lv_receiver": "LV Receiver",
   "block.rpmod.lv_transmitter": "LV Transmitter",
-  "block.rpmod.lv_battery": "LV Battery"
+  "block.rpmod.lv_battery": "LV Battery",
+  "block.rpmod.lv_gem_extractor": "LV Gem Extractor",
+  "gui.rpmod.lv_gem_extractor_gui.label_gem_extractor": "Gem Extractor",
+  "gui.rpmod.lv_gem_extractor_gui.label_gems": "Gems"
 }

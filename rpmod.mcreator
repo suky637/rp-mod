@@ -695,6 +695,101 @@
         ]
       },
       "path": "~/Energy/LV/Storage"
+    },
+    {
+      "name": "LVGemExtractor",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lv_gem_extractor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/rpmod/blockstates/lv_gem_extractor.json",
+          "src/main/java/net/mcreator/rpmod/block/LVGemExtractorBlock.java",
+          "src/main/java/net/mcreator/rpmod/block/entity/LVGemExtractorBlockEntity.java",
+          "src/main/resources/assets/rpmod/models/item/lv_gem_extractor.json",
+          "src/main/resources/assets/rpmod/models/block/lv_gem_extractor.json",
+          "src/main/resources/data/rpmod/loot_table/blocks/lv_gem_extractor.json"
+        ]
+      },
+      "path": "~/Energy/LV/Generators"
+    },
+    {
+      "name": "LVGemExtractorGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lv_gem_extractor_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/rpmod/world/inventory/LVGemExtractorGUIMenu.java",
+          "src/main/java/net/mcreator/rpmod/client/gui/LVGemExtractorGUIScreen.java"
+        ]
+      },
+      "path": "~/Energy/LV/Generators"
+    },
+    {
+      "name": "LVGemExtractorOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lv_gem_extractor_on_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/rpmod/procedures/LVGemExtractorOnTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/Energy/LV/Generators"
+    },
+    {
+      "name": "EnergyText",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "energy_text",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/rpmod/procedures/EnergyTextProcedure.java"
+        ]
+      },
+      "path": "~/Energy/LV/Generators"
     }
   ],
   "variable_elements": [
@@ -810,7 +905,10 @@
       "item_group.rpmod.rp_modcore": "RP Mod — Core",
       "block.rpmod.lv_receiver": "LV Receiver",
       "block.rpmod.lv_transmitter": "LV Transmitter",
-      "block.rpmod.lv_battery": "LV Battery"
+      "block.rpmod.lv_battery": "LV Battery",
+      "block.rpmod.lv_gem_extractor": "LV Gem Extractor",
+      "gui.rpmod.lv_gem_extractor_gui.label_gem_extractor": "Gem Extractor",
+      "gui.rpmod.lv_gem_extractor_gui.label_gems": "Gems"
     }
   },
   "metadata": {
@@ -820,6 +918,7 @@
       "src/main/java/net/mcreator/rpmod/init/RpmodModMenus.java",
       "src/main/java/net/mcreator/rpmod/init/RpmodModKeyMappings.java",
       "src/main/java/net/mcreator/rpmod/init/RpmodModBlocks.java",
+      "src/main/java/net/mcreator/rpmod/init/RpmodModBlockEntities.java",
       "src/main/java/net/mcreator/rpmod/init/RpmodModItems.java",
       "src/main/java/net/mcreator/rpmod/network/RpmodModVariables.java",
       "src/main/resources/META-INF/neoforge.mods.toml",

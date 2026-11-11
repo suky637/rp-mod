@@ -32,5 +32,6 @@ public class RpmodModTabs {
 				tabData.accept(RpmodModBlocks.LV_RECEIVER.get().asItem());
 				tabData.accept(RpmodModBlocks.LV_TRANSMITTER.get().asItem());
 				tabData.accept(RpmodModBlocks.LV_BATTERY.get().asItem());
+				tabData.accept(RpmodModBlocks.LV_GEM_EXTRACTOR.get().asItem());
 			}).build());
 }

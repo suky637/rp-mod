@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "rpmod:block/lv_machine_hull",
+    "up": "rpmod:block/lv_machine_hull",
+    "north": "rpmod:block/lv_gem_extractor",
+    "east": "rpmod:block/lv_machine_hull",
+    "south": "rpmod:block/lv_machine_hull",
+    "west": "rpmod:block/lv_machine_hull",
+    "particle": "rpmod:block/lv_machine_hull"
+  },
+  "render_type": "solid"
+}
